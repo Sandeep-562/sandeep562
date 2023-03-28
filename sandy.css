@@ -1,0 +1,113 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:#A5F1E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.input{
+  border-radius: 2px;
+  outline: none;
+  border: 2px solid #0da2ff;
+  padding: 2px;
+  
+  
+}
+.input-container{
+  position:relative;
+}
+.placeholder{
+  position:absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 14px;
+  padding: 0px 5px;
+  color:#0da2ff;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.input:focus + .placeholder,
+.input:not(:placeholder-shown)+ .placeholder{
+  top:-20px;
+  background-color:#d3edf8;
+
+  
+}
+.container{
+    background: url("https://res.cloudinary.com/dq7ayvax8/image/upload/v1678267483/IMG_20230308_145426_o2mf9o.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    min-height: 400px;
+    min-width: 380px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+                0 2px 20px 0 rgba(0,0,0,0.2);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 0 0;
+    font-size: 30px;
+    color: #fff;
+}
+.input-container{
+    margin: 40px 40px 20px 40px;
+}
+label{
+    color: #fff;
+    margin: 0 0 5px 15px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 30px 0;
+}
+input{
+    outline: none;
+    padding: 0 20px 0 20px;
+    border: 2px solid rgba(255,255,255, 0.015);
+    background: rgba(255,255,255,0.35);
+    height: 40px;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.085),
+                0 2px 30px 0 rgba(0,0,0,0.2);
+    border-radius: 50px;
+    font-size: 25px;
+    color: #fff;
+}
+input:focus,input:valid{
+    border: px solid rgba(255,255,255,0.65);
+    background: transparent;
+    box-shadow: none;
+    border-radius: 30px;
+}
+.submit{
+    background: transparent;
+    height: 40px;
+    border: 2px solid rgba(255,255,255,0.65);
+    box-shadow: none;
+    font-size: 20px;
+    margin-right:150px;
+    margin-left:150px ;
+    transition: .3s ease-in-out;
+    margin-top: 20px;
+}
+.submit:hover{
+    color: rgb(106,87,168);
+    cursor: pointer;
+    border: 2px solid rgba(255,255,255,0.016);
+    background: rgba(255,255,255,0.35);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.085),
+                0 2px 30px 0 rgba(0,0,0,0.2);
+}
+span{
+    display: flex;
+    justify-content: center;
+}
+span a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
